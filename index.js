@@ -7,7 +7,7 @@ const app = express();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://user1:password1@ds253918.mlab.com:53918/net-ninja-rest';
+var mongoDB = 'mongodb://localhost/ninjago';
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
